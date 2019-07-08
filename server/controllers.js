@@ -5,6 +5,6 @@ module.exports = {
             .then(houses => {
                 res.status(200).send(houses)
             })
-            .catch(res.status(500).send('Could not retrieve data'));
+            .catch(err => res.status(500).send('Could not retrieve data'));
     }
 }
